@@ -7,6 +7,6 @@ int main()
 	scanf("%f %f", &a, &b);
 	c=a*b;
 	printf("The floaing point multiplication of the two numbers is %f",c);
-	printf("The integer multiplication of the two numbers is %d",int c);
+	printf("The integer multiplication of the two numbers is %d",int(c));
 	return 0;
 }
