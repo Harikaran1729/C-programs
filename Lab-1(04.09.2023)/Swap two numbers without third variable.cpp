@@ -7,8 +7,9 @@ int main()
 	scanf("%d",&a);
 	printf("Enter b: ");
 	scanf("%d", &b);
-	a=b;
-	b=a;
+	a=a+b;
+	b=a-b;
+	a=a-b;
 	printf("Value of a is %d and value of b is %d", a, b);
 	return 0;
 }
