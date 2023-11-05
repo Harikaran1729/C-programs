@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+int main()
+{
+	int n,i,j;
+	printf("Enter n: ");
+	scanf("%d",&n);
+	printf("Enter array elements: ");
+	int a[n];
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	for(i=0;i<n/2;i++)
+	{
+		int t=a[i];
+		a[i]=a[n-i-1];
+		a[n-i-1]=t;
+	}
+	for(i=0;i<n;i++)
+		printf("%d ",a[i]);
+	return 0;
+}
